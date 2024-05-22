@@ -1,0 +1,23 @@
+$bgColor: linear-gradient(61deg, rgba(0, 0, 0, 1) 0%, rgba(87, 86, 86, 1) 100%);
+$bgSecondaryColor: #000;
+$bgCastColor: radial-gradient(
+    circle,
+    rgba(46, 43, 52, 1) 0%,
+    rgba(115, 107, 129, 1) 100%,
+    rgba(152, 145, 171, 1) 100%
+);
+$TextColor: #f9f9f9;
+$borderColor: #575656;
+$bgHeaderColor: linear-gradient(to bottom, black 28%, transparent 72%);
+
+@font-face {
+    font-family: FightThis;
+    src: url(../../assets/fonts/FightThis.woff2);
+    font-height: 400;
+}
+
+@font-face {
+    font-family: FightThis;
+    src: url(../../assets/fonts/FightThis.woff);
+    font-height: 700;
+}

@@ -1,0 +1,76 @@
+@use "variables";
+@use "hero";
+@use "header";
+@use "about";
+@use "cast";
+@use "plot";
+@use "footer";
+@use "watch";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: variables.$TextColor;
+}
+
+.title {
+    font-family: FightThis, "sans-serif";
+
+    &--sm {
+        font-family: FightThis, "sans-serif";
+        font-size: 2.3em;
+    }
+}
+
+.text {
+    font-size: 1.2em;
+}
+
+.icon {
+    width: 60px;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.btn-invisible {
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    ::-moz-focus-inner {
+        border: 0;
+    }
+}
+
+.secondaryColor {
+    background: variables.$bgCastColor;
+}
+
+@media screen and (max-width: 1040px) {
+
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+
+    .container {
+        max-width: 80%;
+    }
+
+    .secondaryColor {
+        height: 3800px;
+    }
+}

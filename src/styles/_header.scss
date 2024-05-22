@@ -1,0 +1,118 @@
+@use "variables";
+
+.header {
+    background: variables.$bgSecondaryColor;
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 0.8px;
+
+    &__container {
+        max-width: 1000px;
+        width: 100%;
+        margin: 8px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        align-items: center;
+
+        &__content {
+            img {
+                width: 60px;
+                margin: 8px 0;
+            }
+        }
+
+        &__list {
+            display: flex;
+
+            &__item:nth-child(2) {
+                margin: 0 24px;
+            }
+
+            &__item:nth-child(3) {
+                margin-right: 24px;
+            }
+
+            &__item {
+                a {
+                    color: variables.$TextColor;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    &--on-scroll {
+        background: variables.$bgHeaderColor;
+    }
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    border: 1px solid variables.$TextColor;
+    padding: 6px;
+    border-radius: 8px;
+
+    &__line {
+        width: 25px;
+        height: 3px;
+        background-color: variables.$TextColor;
+        border-radius: 8px;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .header {
+        &__container {
+            max-width: 80%;
+            &__list {
+                &__item {
+                    a {
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+
+    .header__container {
+        justify-content: space-between;
+    }
+
+    .header__container__list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 57px;
+        right: 20px;
+        background-color: variables.$bgSecondaryColor;
+        padding: 10px;
+        border-radius: 6px;
+    }
+
+    .header__container__list__item {
+        margin: 10px 0;
+    }
+
+    .header__container__list__item:nth-child(2) {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .header__container__list--open {
+        display: flex;
+        align-items: flex-start;
+    }
+}

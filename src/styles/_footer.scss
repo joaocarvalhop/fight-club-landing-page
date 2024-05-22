@@ -1,0 +1,77 @@
+@use "variables";
+
+.footer {
+    background-color: variables.$bgSecondaryColor;
+    padding: 40px;
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+
+        p {
+            font-size: 1.2em;
+        }
+
+        a {
+            img {
+                width: 23px;
+                height: 23px;
+                margin: 8px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .footer {
+        padding: 22px 40px;
+
+        &__content {
+            p {
+                font-size: 1.2em;
+            }
+
+            a {
+                img {
+                    width: 23px;
+                    height: 23px;
+                    margin: 8px;
+                }
+            }
+        }
+    }
+
+    #footer__content {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .footer {
+        padding: 22px 40px;
+
+        &__content {
+            p {
+                font-size: 1em;
+                line-break: auto;
+            }
+
+            a {
+                img {
+                    width: 20px;
+                    height: 20px;
+                    margin: 6px;
+                }
+            }
+        }
+    }
+
+    #footer__content {
+        margin: 0 auto;
+        max-width: 340px;
+        width: 100%;
+    }
+}

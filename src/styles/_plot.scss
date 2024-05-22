@@ -1,0 +1,127 @@
+@use "variables";
+
+.plot {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        margin: 36px auto 0;
+    }
+
+    &__container {
+        p {
+            font-size: 1.089em;
+            justify-content: center;
+            line-height: 22px;
+        }
+
+        img {
+            width: 550px;
+            height: 310px;
+            border-radius: 8px;
+        }
+
+        &__image1 {
+            margin-top: 36px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            justify-content: space-between;
+            gap: 82px;
+        }
+        &__image2 {
+            margin: 128px 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: space-between;
+            align-items: center;
+            gap: 82px;
+        }
+
+        &__image1,
+        &__image2 {
+            p {
+                width: 450px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .plot {
+        &__container {
+            p {
+                font-size: 1.25em;
+                line-height: 24px;
+            }
+
+            img {
+                width: 370px;
+                height: 310px;
+            }
+
+            &__image1 {
+                width: 100%;
+                margin: 36px auto 0;
+                gap: 36px;
+            }
+            &__image2 {
+                width: 100%;
+                margin-top: 136px;
+                margin-bottom: -30px;
+                gap: 36px;
+            }
+
+            &__image1,
+            &__image2 {
+                p {
+                    width: 320px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .plot {
+        &__container {
+            p {
+                font-size: 1.1em;
+                line-height: 22.5px;
+            }
+
+            img {
+                width: 340px;
+                height: 300px;
+            }
+
+            &__image1 {
+                width: 100%;
+                margin: 36px auto 0;
+                gap: 36px;
+                grid-template-columns: 1fr;
+                align-items: center;
+                justify-items: center;
+            }
+            &__image2 {
+                width: 100%;
+                margin-top: 136px;
+                gap: 36px;
+                grid-template-columns: 1fr;
+                align-items: center;
+                justify-items: center;
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            &__image1,
+            &__image2 {
+                p {
+                    width: 340px;
+                }
+            }
+        }
+    }
+}

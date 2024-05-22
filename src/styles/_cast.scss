@@ -1,0 +1,102 @@
+.cast {
+    &__content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        &__title {
+            margin-top: 48px;
+        }
+
+        &__actors {
+            margin: 24px 0 48px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 36px;
+
+            &__item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                p {
+                    display: flex;
+                    max-width: 260px;
+                    width: 100%;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 48px;
+                }
+
+                &__btn {
+                    &__img {
+                        margin-bottom: 16px;
+                        width: 260px;
+                        height: 350px;
+                        border-radius: 8px;
+                        cursor: pointer;
+                        display: none;
+
+                        &--is-active {
+                            display: grid;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .cast {
+        &__content {
+
+            &__actors {
+                grid-template-columns: 1fr;
+
+                &__item {
+
+                    p {
+                        font-size: 1.29em;
+                    }
+
+                    &__btn {
+                        &__img {
+                            width: 340px;
+                            height: 430px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 780px) {
+    .cast {
+        &__content {
+
+            &__actors {
+                grid-template-columns: 1fr;
+
+                &__item {
+
+                    p {
+                        font-size: 1.2em;
+                    }
+
+                    &__btn {
+                        &__img {
+                            width: 340px;
+                            height: 430px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fight Club</title>
+    <link rel="stylesheet" href="./dist/css/main.css">
+    <link rel="icon" href="./dist/images/icons/soap-icon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header header--on-scroll" id="home">
+        <div class="header__container">
+            <div class="header__container__content">
+                <a id="go-to-home" href="#home">
+                    <img src="./dist/images/icons/soap-icon.ico" alt="Fight Club Icon">
+                </a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+            </div>
+            <ul class="header__container__list" id="menu">
+                <li class="header__container__list__item"><a href="#about">About the Movie</a></li>
+                <li class="header__container__list__item"><a href="#cast">Cast</a></li>
+                <li class="header__container__list__item"><a href="#plot">Plot</a></li>
+                <li class="header__container__list__item"><a href="#watch">WHERE TO WATCH</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero__content">
+            <h1 class="title hero__content__title">
+                <span>Fight</span>
+                <span>Club</span>
+            </h1>
+            <p class="hero__content__text">
+                <em>"The first rule of Fight Club is: you do not talk about Fight Club."</em>
+            </p>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about__container">
+            <img class="about__container__image" src="./dist/images/about_cover.jpg" alt="Cover film">
+            <div class="about__container__content">
+                <h2 class="title--sm about__container__content__title">About the Movie</h2>
+                <p class="text about__container__content__text" id="about-text">"Fight Club" is a 1999 film directed by
+                    David Fincher,
+                    based on the
+                    novel of the same name by Chuck
+                    Palahniuk. The film stars Brad Pitt, Edward Norton, and Helena Bonham Carter. The story revolves
+                    around
+                    an anonymous narrator who suffers from insomnia and finds a way to escape his mundane life through
+                    Fight
+                    Club, a secret club where men gather to fight.</p>
+                <ul class="about__container__content__info">
+                    <li class="about__container__content__info__item">
+                        <img src="./dist/images/icons/star_imdb.png" alt="Star"> <b>IMDb 8.8</b>/10
+                    </li>
+                    <li class="about__container__content__info__item">2 h 19 min</li>
+                    <li class="about__container__content__info__item">1999</li>
+                    <li class="about__container__content__info__item">18</li>
+                </ul>
+                <ul class="about__container__content__gender">
+                    <li class="about__container__content__gender__item">Drama</li>
+                    <li class="about__container__content__gender__item">Thriller</li>
+                </ul>
+                <div class="about__container__content__trailer">
+                    <h2 class="title--sm">Trailer</h2>
+                    <iframe src="https://www.youtube.com/embed/BdJKm16Co6M" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="secondaryColor">
+        <section class="cast" id="cast">
+            <div class="cast__content container">
+                <h2 class="cast__content__title title--sm">Cast</h2>
+                <ul class="cast__content__actors">
+                    <li class="cast__content__actors__item">
+                        <button class="btn-invisible cast__content__actors__item__btn" data-button="tyler">
+                            <img data-id="brad"
+                                class="cast__content__actors__item__btn__img cast__content__actors__item__btn__img--is-active"
+                                src="./dist/images/cast/brad.webp" alt="Brad Pitt">
+                            <img data-id="tyler" class="cast__content__actors__item__btn__img"
+                                src="./dist/images/cast/tyler.jpg" alt="Tyler Durden">
+                        </button>
+                        <p class="text">Brad Pitt as <br><span><b>Tyler Durden</b></span></p>
+                    </li>
+                    <li class="cast__content__actors__item">
+                        <button class="btn-invisible cast__content__actors__item__btn" data-button="narrator">
+                            <img data-id="norton"
+                                class="cast__content__actors__item__btn__img cast__content__actors__item__btn__img--is-active"
+                                src="./dist/images/cast/Norton.webp" alt="Edward Norton">
+                            <img data-id="narrator" class="cast__content__actors__item__btn__img"
+                                src="./dist/images/cast/narrator.jpg" alt="the Narrator">
+                        </button>
+                        <p class="text">Edward Norton as <br><span><b>The Narrator</b></span></p>
+                    </li>
+                    <li class="cast__content__actors__item">
+                        <button class="btn-invisible cast__content__actors__item__btn" data-button="marla">
+                            <img data-id="helena"
+                                class="cast__content__actors__item__btn__img cast__content__actors__item__btn__img--is-active"
+                                src="./dist/images/cast/Helena.webp" alt="Helena Bonham Carter">
+                            <img data-id="marla" class="cast__content__actors__item__btn__img"
+                                src="./dist/images/cast/marla.webp" alt="Marla Singer">
+                        </button>
+                        <p class="text">Helena Bonham Carter as <br><span><b>Marla Singer</b></span></p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="plot container" id="plot">
+            <h2 class="plot__title title--sm">Plot</h2>
+            <div class="plot__container ">
+                <div class="plot__container__image1">
+                    <img src="./dist/images/daniel_reason.jpg" alt="Narrator tired of his job">
+                    <p>The narrator, tired of his monotonous and consumerist life, finds relief and purpose in Fight
+                        Club,
+                        founded by Tyler Durden. As the club grows, the rules become more extreme, and the boundaries
+                        between
+                        reality and delusion begin to blur, leading to a surprising and disturbing climax.
+                    </p>
+                </div>
+                <div class=" plot__container__image2">
+                    <p>"I see in the fight club the strongest and smartest men who've ever lived. I see all this
+                        potential and I see squandering. God damn it, an entire generation pumping gas, waiting tables,
+                        slaves with white collars, advertising has us chasing cars and clothes, working jobs we hate so
+                        we can buy shit we don't need. We're the middle children of the history man, no purpose or
+                        place, we have no Great war, no Great depression, our great war is a spiritual war, our great
+                        depression is our lives, we've been all raised by television to believe that one day we'd all be
+                        millionaires and movie gods and rock stars, but we won't and we're slowly learning that
+                        fact."<br><br>
+                        ― Chuck Palahniuk, Fight Club (Romance) of 1996.</p>
+                    <img src="./dist/images/img2_plot.jpg" alt="Narrator and tyler talking on the sidewalk">
+                </div>
+            </div>
+        </section>
+        <section class="watch" id="watch">
+            <h2 class="watch__title title--sm">Where to watch</h2>
+            <div class="block watch__links">
+                <a target="_blank" class="watch__links__item"
+                    href="https://www.starplus.com/pt-br/movies/clube-da-luta/38HCX4uW3BlA"><img
+                        src="https://br.web.img3.acsta.net/commons/v9/common/svod_providers/square-starplus.svg"
+                        alt="Star +"></a>
+                <a target="_blank" class="watch__links__item" href="https://www.netflix.com/br/title/26004747"><img
+                        src="https://br.web.img3.acsta.net/commons/v9/common/svod_providers/square-netflix.svg"
+                        alt="Netflix"></a>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="footer__content container" id="footer__content">
+            <p>&copy; 2024 João Pedro Carvalho</p>
+            <a target="_blank" href="https://github.com/joaocarvalhop">
+                <img src="./dist/images/icons/github.png" alt="Github logo"></a>
+        </div>
+    </footer>
+    <script src="./dist/scripts/main.js"></script>
+</body>
+
+</html>
