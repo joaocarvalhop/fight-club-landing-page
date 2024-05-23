@@ -60,14 +60,16 @@
 }
 
 @media screen and (max-width: 780px) {
+
     .watch {
         padding: 150px;
         margin-bottom: 36px;
+        max-width: 100%;
+        margin: 0 auto;
 
         &__title {
-            margin-top: -800px;
+            margin-top: -740px;
             margin-bottom: 36px;
-            width: 192px;
         }
 
         &__links {
