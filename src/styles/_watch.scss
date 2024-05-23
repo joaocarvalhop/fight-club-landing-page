@@ -61,10 +61,14 @@
 
 @media screen and (max-width: 780px) {
 
+    #where-to-watch {
+        width: 220px;
+    }
+
     .watch {
         padding: 150px;
         margin-bottom: 36px;
-        max-width: 100%;
+        max-width: 90%;
         margin: 0 auto;
 
         &__title {
@@ -75,7 +79,7 @@
         &__links {
             &__item {
                 img {
-                    width: 58px;
+                    width: 62px;
                 }
             }
         }
