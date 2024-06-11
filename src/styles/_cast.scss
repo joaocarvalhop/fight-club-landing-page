@@ -1,3 +1,5 @@
+@use "variables";
+
 .cast {
     &__content {
         display: flex;
@@ -32,7 +34,9 @@
                 }
 
                 &__btn {
+
                     &__img {
+                        transition: all 0.2s linear;
                         margin-bottom: 16px;
                         width: 260px;
                         height: 350px;
@@ -42,6 +46,11 @@
 
                         &--is-active {
                             display: grid;
+                        }
+            
+                        &:hover {
+                            transition: all 0.2s linear;
+                            box-shadow: 2px 2px 35px variables.$TextColor;
                         }
                     }
                 }

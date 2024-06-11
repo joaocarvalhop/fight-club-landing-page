@@ -46,9 +46,6 @@ document.addEventListener("DOMContentLoaded", function () {
     homeIcon.addEventListener("click", function () {
         window.scrollTo(0, 0);
     });
-
-    
-
 });
 
 function toggleHeader() {
