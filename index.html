@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -32,14 +33,14 @@
                 <li class="header__container__list__item"><a href="#plot">Plot</a></li>
                 <li class="header__container__list__item"><a href="#watch">WHERE TO WATCH</a></li>
             </ul>
-            <div class="flag__desktop">
+            <!-- <div class="flag__desktop">
                 <button class="flag__desktop__select" type="menu">
                     <div class="flag__desktop__select__images">
                         <img src="./dist/images/flags/usa-flag.webp" alt="United states's flag">
                         <img src="./dist/images/flags/brazil-flag.webp" alt="Brazilian flag">
                     </div>
                 </button>
-            </div>
+            </div> -->
     </header>
     <section class="hero">
         <div class="hero__content">
@@ -126,7 +127,7 @@
         <section class="plot container" id="plot">
             <h2 class="plot__title title--sm">Plot</h2>
             <div class="plot__container ">
-                <div class="plot__container__image1">
+                <div class="plot__container__image1" data-aos="fade-left">
                     <img src="./dist/images/daniel_reason.jpg" alt="Narrator tired of his job">
                     <p>The narrator, tired of his monotonous and consumerist life, finds relief and purpose in Fight
                         Club,
@@ -135,7 +136,7 @@
                         reality and delusion begin to blur, leading to a surprising and disturbing climax.
                     </p>
                 </div>
-                <div class=" plot__container__image2">
+                <div class=" plot__container__image2" data-aos="fade-right">
                     <p>"I see in the fight club the strongest and smartest men who've ever lived. I see all this
                         potential and I see squandering. God damn it, an entire generation pumping gas, waiting tables,
                         slaves with white collars, advertising has us chasing cars and clothes, working jobs we hate so
@@ -169,6 +170,7 @@
                 <img src="./dist/images/icons/github.png" alt="Github logo"></a>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./src/scripts/main.js"></script>
 </body>
 
